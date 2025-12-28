@@ -26,8 +26,8 @@ def get_first_n_lines(your_file, n_lines, output_file_name):
   df.to_csv(output_file_name, index=False)
 
 def get_all_legal_moves(my_fen):
-    """Returns a list of all legal moves that can be parsed into a json format
-    for LLM prompting."""
+    """Returns a list of all legal moves that can be parsed into a json format for LLM prompting.
+    """
     board = chess.Board(my_fen)
     moves = board.legal_moves
     uci_lm_list = []
@@ -36,9 +36,8 @@ def get_all_legal_moves(my_fen):
     return uci_lm_list
 
 def format_input(fen, legal_moves):
-    """This function formats the FEN and LegalMoves 
-    columns from the data frame into a JSONL-friendly 
-    format."""
+    """This function formats the FEN and LegalMoves columns from the data frame into a JSONL-friendly format.
+    """
     return (
         f"FEN: {fen}\n"
         f"Legal moves: {', '.join(legal_moves)}"
@@ -51,9 +50,8 @@ def get_best_move(fen):
     return (stockfish.get_best_move())
 
 def format_output(best_move):
-    """This function returns a text-based output 
-    from the BestMove column, allowing the LLM to fine 
-    tune data."""
+    """This function returns a text-based output from the BestMove column, allowing the LLM to fine tune data.
+    """
     return (
         f"<uci_move>{best_move}</uci_move>"
     )
