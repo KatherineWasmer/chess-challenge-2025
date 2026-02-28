@@ -1,5 +1,5 @@
 # chess-challenge-2025
-These are the resources used for my fine-tuned LLM for AI Crowd's Global Chess Challenge. You can download my best fine-tuned model from [my HuggingFace page]([https://huggingface.co/kgwasmer/aicrowd-chess-model](https://huggingface.co/kgwasmer/aicrowd-best-model))
+These are the resources used for my fine-tuned LLM for AI Crowd's Global Chess Challenge. You can download my best fine-tuned model from [my HuggingFace page](https://huggingface.co/kgwasmer/aicrowd-best-model)
 
 ### configure_lichess_csv.py 
 
