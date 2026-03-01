@@ -30,3 +30,4 @@ Within the data folder, you will find various subsets of the puzzle dataset, whi
 
 **configure_lichess_csv.py:** This Python script parses the LiChess puzzle data into an interpretable CSV format for data analysis, manipulation, and JSON conversion for LLM prompting. 
 
+**jsonl_conversion_example.ipynb:** A notebook showing how to convert LiChess data into JSON lines compatible for training an LLM. The output can be found in the data folder. 
